@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Northstar Solutions – Home Service AI Automation</title>
+<style>
+    :root {
+      --primary-color: #0A2647;
+      --secondary-color: #144272;
+      --light-bg: #F9FAFC;
+      --text-color: #1C1C1E;
+      --accent-color: #205295;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 10px 0 20px;
+      font-size: 1.1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn-primary {
+      background: var(--secondary-color);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: var(--accent-color);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    .btn-secondary:hover {
+      background: white;
+      color: var(--primary-color);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section:nth-child(even) {
+      background: var(--light-bg);
+    }
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 280px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .pricing .plan {
+      flex: 1;
+      min-width: 280px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      background: white;
+    }
+    .plan h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .columns {
+        flex-direction: column;
+      }
+      .pricing {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Never Miss Another Lead Again</h1>
+    <p>Northstar Solutions builds AI assistants for home service businesses in Kelowna that answer enquiries instantly, qualify leads, and send you all the details—while you’re still on the job.</p>
+    <!-- Primary call‑to‑action: invite visitors to request a free AI audit instead of a sales call -->
+    <a class="btn btn-primary" href="#contact">Request a Free AI Audit</a>
+    <!-- Secondary call‑to‑action: link to the How It Works section rather than a public demo -->
+    <a class="btn btn-secondary" href="#how">See How It Works</a>
+    <p style="margin-top: 10px; font-size: 0.9rem;">Serving window cleaning, gutter cleaning, pressure washing and other home services across Kelowna &amp; surrounding areas.</p>
+  </header>
+
+  <!-- Who We Help -->
+  <section id="who">
+    <h2>Built for Busy Home Service Owners</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>Perfect for:</h3>
+        <ul>
+          <li>Window &amp; gutter cleaning</li>
+          <li>Pressure washing &amp; house washing</li>
+          <li>Landscaping &amp; lawn care</li>
+          <li>Exterior/roof cleaning</li>
+          <li>Handyman &amp; small trades</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>We handle enquiries from:</h3>
+        <ul>
+          <li>Website contact forms</li>
+          <li>“Get a quote” chat widgets</li>
+          <li>After‑hours enquiries</li>
+          <li>Mobile visitors who prefer chat over calling</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem & Solution -->
+  <section id="problem-solution">
+    <h2>The Problem: Leads Come In. You’re On a Ladder.</h2>
+    <div class="columns">
+      <div class="column">
+        <p>Most home service businesses lose work because:</p>
+        <ul>
+          <li>Calls go to voicemail while you’re working</li>
+          <li>Website visitors don’t want to wait for a reply</li>
+          <li>Quotes get delayed until you’re back at the computer</li>
+          <li>There’s no simple way to track every enquiry in one place</li>
+        </ul>
+      </div>
+      <div class="column">
+        <p><strong>Northstar’s AI assistant:</strong></p>
+        <ul>
+          <li>Replies to new enquiries instantly, 24/7</li>
+          <li>Asks the right questions (service, area, home type, contact)</li>
+          <li>Sends all the lead info into a simple dashboard/Google Sheet</li>
+          <li>Can trigger automatic follow‑up messages so more quotes turn into booked jobs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how">
+    <h2>How It Works</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>1. Quick Audit</h3>
+        <p>We look at how enquiries currently come in (website, forms, calls, messages) and what information you need to quote properly.</p>
+      </div>
+      <div class="column">
+        <h3>2. Build Your Assistant</h3>
+        <p>We design a custom chat flow for your business that collects service type, area, property details, and contact info, then sends it straight to you.</p>
+      </div>
+      <div class="column">
+        <h3>3. Launch &amp; Optimize</h3>
+        <p>We install the assistant on your site (or a standalone link), connect it to your lead sheet, and keep improving it each month as your business grows.</p>
+      </div>
+    </div>
+    <p style="margin-top: 20px;">No code, no extra logins, no new software for you to learn. You just get more organized leads.</p>
+  </section>
+
+  <!-- Demo Section removed to preserve the shock factor for live calls. Instead, use the How It Works section as the preview. -->
+
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Simple Pricing</h2>
+    <p>Every build is custom, but most home service systems fall into this range.</p>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Setup Fee</h3>
+        <p><strong>From CA$1,000</strong></p>
+        <ul>
+          <li>Custom assistant design &amp; build</li>
+          <li>Integration with your site or a hosted chat page</li>
+          <li>Lead capture &amp; Google Sheet setup</li>
+          <li>Basic automated follow‑up</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Ongoing Maintenance</h3>
+        <p><strong>From CA$500/month</strong></p>
+        <ul>
+          <li>Monitoring &amp; fixes</li>
+          <li>Updating services, pricing, FAQs</li>
+          <li>Improving the flow over time</li>
+          <li>Adding new automations as your business grows</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top: 20px; font-size: 0.9rem;">We’ll confirm your exact setup fee after a short discovery call. No long‑term contracts.</p>
+    <p style="text-align: center; margin-top: 20px;">
+      <a class="btn btn-primary" href="#contact">Request a Free AI Audit</a>
+    </p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Why Northstar Solutions?</h2>
+    <p>Northstar Solutions is a small automation studio based in Kelowna, focused on helping local home service businesses run smoother without hiring more office staff. Instead of selling generic software, we build and manage a system that fits how <em>you</em> already quote, schedule, and follow up.</p>
+    <ul>
+      <li>Local, owner‑operated, not a big faceless SaaS</li>
+      <li>Specialized in home services &amp; trades</li>
+      <li>You deal directly with the person building your system</li>
+      <li>Clear pricing and month‑to‑month support</li>
+    </ul>
+    <p>You focus on clean windows and happy clients. We’ll make sure no enquiry slips through the cracks.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <h4>Do I need a website for this to work?</h4>
+    <p>No. We can give you a hosted chat link you can share on your Google Business Profile, social media, or QR codes, and we can embed it into your website later if you have or build one.</p>
+    <h4>Will this replace my receptionist?</h4>
+    <p>It can reduce how many calls and emails they need to handle, but most businesses use it to handle after‑hours enquiries, basic questions, and quote requests—so your human team can focus on scheduling and customers.</p>
+    <h4>What if I’m not technical at all?</h4>
+    <p>You don’t need to be. We handle the build, setup, integrations, and ongoing updates. You just see organized leads coming in.</p>
+    <h4>How long does it take to launch?</h4>
+    <p>Most new systems are live within 7–14 days, depending on how quickly we get your service details and pricing.</p>
+    <h4>Can I cancel the monthly maintenance?</h4>
+    <p>Yes, everything is month‑to‑month. If you cancel, we’ll simply turn off ongoing optimization and monitoring.</p>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact">
+    <p><strong>Northstar Solutions – AI Automation for Home Services</strong></p>
+    <p>Kelowna, BC, Canada</p>
+    <p>📧 <a href="mailto:ai.northstarsolutions@gmail.com" style="color: #fff; text-decoration: underline;">ai.northstarsolutions@gmail.com</a></p>
+    <p style="margin-top: 10px; font-size: 0.9rem;">© <span id="year"></span> Northstar Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
